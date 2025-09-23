@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Foodbuddy 2.0</title>
+</head>
+<body>
+  
+  <div class="sidebar">
+    <h1 class="logo">FoodBuddy</h1>
+    <div class="sidebar-menus">
+      <a href="home.html"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+      <a href="index.html"><ion-icon name="receipt-outline"></ion-icon>Menu</a>
+      <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+      <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact us</a>
+      <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+    </div>
+    <div class="sidebar-logout">
+      <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-navbar">
+      <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" id="search-input"placeholder="What do you want to eat">
+        <button class="search-btn" id ="search-btn">Search</button>
+      </div>
+      <div class="profile">
+  <a class="user" href="home.html#register"><ion-icon name="person-outline"></ion-icon></a>
+  <a class="cart" href="#">
+    <ion-icon name="cart-outline"></ion-icon>
+    <span class="cart-counter">0</span>
+  </a>
+</div>
+
+    </div>
+    <div id="cart-modal">
+  <span class="close-cart">X</span>
+  <ul class="cart-items"></ul>
+  <p class="cart-total">Total: Rs.0</p>
+  <button id="place-order-btn">Place Order</button>
+</div>
+
+
+<div id="about" class="about-section">
+  <h1>About FoodBuddy</h1>
+  <p>
+    Welcome to <strong>FoodBuddy</strong> — your ultimate partner in enjoying great food.  
+    We started with a simple idea: to make food delivery not just convenient, but also fun, exciting, and full of flavor.
+  </p>
+  <p>
+    At FoodBuddy, we bring together a wide range of dishes from local favorites to global cuisines, all delivered fresh to your doorstep.  
+    Whether you’re craving a quick snack, a hearty meal, or a sweet treat, FoodBuddy has something for everyone.
+  </p>
+
+  <h2>Our Mission</h2>
+  <p>
+    To make dining experiences effortless and joyful by connecting people with the food they love.  
+    We believe that good food creates lasting memories, and we want to be a part of yours.
+  </p>
+
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>🍲 A wide variety of cuisines to suit every taste</li>
+    <li>🚀 Fast, reliable, and hygienic delivery</li>
+    <li>💳 Easy and secure payment options</li>
+    <li>🎉 Exclusive offers and discounts for FoodBuddy members</li>
+  </ul>
+</div>
+
+<div id="contact" class="contact-section">
+  <h1>Contact Us</h1>
+  <p>
+    Have questions, feedback, or just want to say hello?  
+    We’d love to hear from you! Our team is always ready to help you with orders, issues, or suggestions.
+  </p>
+
+  <h2>Get in Touch</h2>
+  <ul>
+    <li>📧 Email: <a href="mailto:support@foodbuddy.com">support@foodbuddy.com</a></li>
+    <li>📞 Phone: +91 98765 43210</li>
+    <li>📍 Address: 123 Food Street, Flavor Town, India</li>
+  </ul>
+
+  <h2>Send Us a Message</h2>
+  <form action="#" method="post" class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <h2>Follow Us</h2>
+  <p>Stay connected for updates, offers, and food inspiration:</p>
+  <p>
+    <a href="#">Instagram</a> | 
+    <a href="#">Facebook</a> | 
+    <a href="#">Twitter</a>
+  </p>
+</div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

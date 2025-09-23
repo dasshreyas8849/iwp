@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Foodbuddy 2.0</title>
+</head>
+<body>
+  
+  <div class="sidebar">
+    <h1 class="logo">FoodBuddy</h1>
+    <div class="sidebar-menus">
+      <a href="home.html"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+      <a href="#"><ion-icon name="receipt-outline"></ion-icon>Menu</a>
+      <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+      <a href="about.html"><ion-icon name="chatbubbles-outline"></ion-icon>Contact us</a>
+      <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+    </div>
+    <div class="sidebar-logout">
+      <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+    </div>
+  </div>
+
+  
+  <div class="main">
+    
+    <div class="main-navbar">
+      <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" id="search-input"placeholder="What do you want to eat">
+        <button class="search-btn" id ="search-btn">Search</button>
+      </div>
+      <div class="profile">
+  <a class="user" href="home.html#register"><ion-icon name="person-outline"></ion-icon></a>
+  <a class="cart" href="#">
+    <ion-icon name="cart-outline"></ion-icon>
+    <span class="cart-counter">0</span>
+  </a>
+</div>
+
+    </div>
+    <div class="main-highlight">
+      <div class="main-header">
+        <h2 class="main-title">Recommendations</h2>
+        <div class="main-arrow">
+          <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+          <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="highlight-wrapper">
+        <div class="highlight-card"><img class="highlight-img" src="Images/Salad.jpeg"><div class="highlight-desc"><h4>Fresh Salad</h4><p>Rs.80</p></div></div>
+        <div class="highlight-card"><img class="highlight-img" src="Images/Pizza.jpeg"><div class="highlight-desc"><h4>Pizza</h4><p>Rs.125</p></div></div>
+        <div class="highlight-card"><img class="highlight-img" src="Images/Burger.jpg"><div class="highlight-desc"><h4>Chicken Burger</h4><p>Rs.140</p></div></div>
+        <div class="highlight-card"><img class="highlight-img" src="Images/Steak.jpeg"><div class="highlight-desc"><h4>Steak</h4><p>Rs.410</p></div></div>
+      </div>
+    </div>
+
+    
+    <div class="main-menus">
+      
+      <div class="main-filter">
+        <div>
+          <h2 class="main-title">Menu<br>Category</h2>
+          <div class="main-arrow">
+            <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+            <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="filter-wrapper">
+          <a href="#rice-detail" class="filter-card">
+  <div class="filter-icon">
+    <ion-icon name="restaurant-outline"></ion-icon>
+  </div>
+  <p>Rices</p>
+</a>
+<a href="#burger-detail" class="filter-card">
+  <div class="filter-icon">
+    <ion-icon name="fast-food-outline"></ion-icon>
+  </div>
+  <p>Burger</p>
+</a>
+
+          <a href="#pizza-detail" class="filter-card"><div class="filter-icon"><ion-icon name="pizza-outline"></ion-icon></div><p>Pizza</p></a>
+          <a href="#wine-detail" class="filter-card"><div class="filter-icon"><ion-icon name="wine-outline"></ion-icon></div><p>Wine</p></a>
+          <a href="#icecream-detail" class="filter-card"><div class="filter-icon"><ion-icon name="ice-cream-outline"></ion-icon></div><p>Ice Cream</p></a>
+          <a href="#seafood-detail" class="filter-card"><div class="filter-icon"><ion-icon name="fish-outline"></ion-icon></div><p>Seafood</p></a>
+          <a href="#coffee-detail" class="filter-card"><div class="filter-icon"><ion-icon name="cafe-outline"></ion-icon></div><p>Coffee</p></a>
+          <a href="#healthy-detail" class="filter-card"><div class="filter-icon"><ion-icon name="nutrition-outline"></ion-icon></div><p>Healthy</p></a>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      
+      <div class="seafood-detail" id="seafood-detail"><h2 class="main-title">Seafood</h2><div class="detail-wrapper">
+        
+        <div class="detail-card"><img class="detail-img" src="Images/shrimp soup.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Shrimp Soup</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.183</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/fish fry.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Fish Fry</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.120</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/prawn65.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Prawn 65</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.165</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/squid.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Squid fry</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.183</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/crab cakes.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Crab cakes 5</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.200</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/Mussels.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Mussels 6</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.220</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/Scampi.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Shrimp Scampi 7</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.250</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/aalmon.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Grilled Salmon 8</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.275</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+      
+      <div class="burger-detail" id="burger-detail"><h2 class="main-title"><br>Burgers and Fries</h2><div class="detail-wrapper">
+        
+        <div class="detail-card"><img class="detail-img" src="Images/CCB.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Classic Chicken Burger</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.120</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/cb.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Cheese burger</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.130</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/bb.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Beef burger</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.140</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/ff.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Plain fries</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.150</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/ppf.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Peri Peri Fries</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.160</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/dpb.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Double Patty Burger</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.170</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/fcb.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Fried Chicken Burger</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.180</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/bfc.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Burger and fries combo</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.190</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+      
+      <div class="main-detail" id="pizza-detail"><h2 class="main-title"><br>Pizza</h2><div class="detail-wrapper">
+       
+        <div class="detail-card"><img class="detail-img" src="Images/mp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Margherita Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.110</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/pp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Chicken Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.210</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/bbqp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Barbeque Chicken Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.220</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/hp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Hawaiian Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.230</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/vgp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Veg Lover's Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.240</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/mp.jpegmlp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Paneer Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.250</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/fcp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Fried Chicken Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.260</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/np.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Neopolitano Pizza</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.270</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+      
+      <div class="main-detail" id="wine-detail"><h2 class="main-title">Wine</h2><div class="detail-wrapper">
+        
+        <div class="detail-card"><img class="detail-img" src="Images/merlot.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Merlot</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.500</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        
+        <div class="detail-card"><img class="detail-img" src="Images/chardonnay.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Chardonnay</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.520</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/cs.jpeg"><div class="detail-desc"><div class="detail-name"><h4>White wine</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.540</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/pn.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Bourbon</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.560</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/zin.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Zinesiter</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.580</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/ries.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Resilester</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.600</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/sb.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Bourdeux</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.620</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/miyan.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Red wine</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.640</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+     
+      <div class="main-detail" id="icecream-detail"><h2 class="main-title">Ice Cream</h2><div class="detail-wrapper">
+        
+        <div class="detail-card"><img class="detail-img" src="Images/choco.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Chocolate Ice Cream</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.90</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        
+        <div class="detail-card"><img class="detail-img" src="Images/vanilla.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Vanilla Ice Cream</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.50</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/strawberry.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Strawberry Ice Cream</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.55</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/butter pecan.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Butter Pecan</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.80</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/dbyc.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Death By chocolate</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.110</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/mint cc.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Mint Chocolate Chip</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.100</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/cookiesand cream.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Cookies and Cream</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.130</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/rockyroad.jpg"><div class="detail-desc"><div class="detail-name"><h4>Rocky Road</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.90</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+     
+      <div class="main-detail" id="coffee-detail"><h2 class="main-title">Coffee</h2><div class="detail-wrapper">
+        
+        <div class="detail-card"><img class="detail-img" src="Images/capp.webp"><div class="detail-desc"><div class="detail-name"><h4>Cappuccino</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.70</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        
+        <div class="detail-card"><img class="detail-img" src="Images/americano.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Americano</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.120</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/frapp.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Frappuccino</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.100</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/flat white.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Flat White</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.140</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/cold coffee.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Cold Coffee</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.110</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/latte.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Latte</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.150</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/espresso.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Espresso</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.130</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/mocha.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Mocha</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.140</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+      
+      <div class="main-detail" id="healthy-detail"><h2 class="main-title">Healthy</h2><div class="detail-wrapper">
+       
+        <div class="detail-card"><img class="detail-img" src="Images/grilled cs.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Grilled chicken salad</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.100</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+       
+        <div class="detail-card"><img class="detail-img" src="Images/quionao sala.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Quinoa Salad</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.110</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/turkey wrap.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Turkey Wrap</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.120</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/salmon with vegg.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Salmon with vegetables</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.130</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/smoothie bowl.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Smoothie bowl</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.140</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/Buddha bowl.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Buddha bowl</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.150</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/veggie stir fry.jpg"><div class="detail-desc"><div class="detail-name"><h4>Veggie Stir Fry</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.160</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/vocado toso.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Avocado Toast</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.170</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+      
+      <div class="main-detail" id ="rice-detail"><h2 class="main-title">Rices</h2><div class="detail-wrapper">
+       
+        <div class="detail-card"><img class="detail-img" src="Images/kol biri.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Kolkata Biriyani</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.140</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/plain rice.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Plain Rice</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.130</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/malabar biri.jpeg"><div class="detail-desc"><div class="detail-name"><h4>MLalabar Biriyani</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.125</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/luckno w biri.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Lucknow Biriyani</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.140</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/jeera rice.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Jeera Rice</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.80</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/hyder biri.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Hyderabadi Biriyani</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.180</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/veg pulao.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Veg Pulao</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.120</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+        <div class="detail-card"><img class="detail-img" src="Images/chicken fried rice.jpeg"><div class="detail-desc"><div class="detail-name"><h4>Chicken Fried Rice</h4><p class="detail-sub">Lorem ipsum</p><p class="price">Rs.110</p></div><ion-icon class="detail-favorite" name="bookmark-outline"></ion-icon></div></div>
+      </div></div>
+
+    </div> 
+
+  </div> 
+<div id="cart-modal">
+  <span class="close-cart">X</span>
+  <ul class="cart-items"></ul>
+  <p class="cart-total">Total: Rs.0</p>
+  <button id="place-order-btn">Place Order</button>
+</div>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
